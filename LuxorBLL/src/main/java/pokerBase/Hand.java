@@ -330,6 +330,7 @@ public class Hand {
 			ArrayList<Card> kickers = new ArrayList<Card>();
 			kickers.add(h.getCardsInHand().get(eCardNo.FourthCard.getCardNo()));
 			kickers.add(h.getCardsInHand().get(eCardNo.FifthCard.getCardNo()));
+			hs.setKickers(kickers);
 		}else{if (h.getCardsInHand().get(eCardNo.SecondCard.getCardNo()).geteRank() ==
 				h.getCardsInHand().get(eCardNo.FourthCard.getCardNo()).geteRank()){
 			bHandScore = true;
@@ -416,6 +417,7 @@ public class Hand {
 			kickers.add(Card3);
 			kickers.add(Card4);
 			kickers.add(Card5);
+			hs.setKickers(kickers);
 		}else{if (Card2.geteRank() == Card3.geteRank()){
 			bHandScore = true;
 			hs.setHandStrength(eHandStrength.Pair.getHandStrength());
